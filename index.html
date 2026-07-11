@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -80,25 +81,44 @@
     </section>
 
     <!-- 3. Medical Scrubs Showcase -->
-    <section class="scrubs-showcase section-padding">
-        <div class="container hero-container" style="align-items: center;">
-            <div class="hero-image" style="flex: 1; display: flex; justify-content: flex-start;">
-                <img src="assets/images/home2.png" alt="Medical Scrubs"
-                    style="max-height: 500px; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-            </div>
-            <div class="hero-content" style="flex: 1;">
-                <h2
-                    style="font-size: 2.5rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.5rem; letter-spacing: -0.5px;">
-                    MEDICAL SCRUBS</h2>
-                <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem; line-height: 1.6;">Comfortable, durable
-                    and stylish scrubs for healthcare professionals. Engineered for long shifts and premium comfort.</p>
-                <a href="scrubs.html" class="btn btn-primary hero-btn">View Collection</a>
-            </div>
+    <section class="scrubs-showcase">
+
+    <div class="scrubs-overlay"></div>
+
+    <div class="container scrubs-container">
+
+        <div class="scrubs-content">
+
+            <span class="scrubs-label">MEDICAL WORKWEAR</span>
+
+            <h2>
+                MEDICAL<br>
+                SCRUBS
+            </h2>
+
+            <h3>
+                COMFORT. STYLE.<br>
+                PERFORMANCE.
+            </h3>
+
+            <p>
+                Premium medical scrubs designed for healthcare
+                professionals. Engineered for long shifts,
+                everyday comfort and modern performance.
+            </p>
+
+            <a href="scrubs.html" class="btn btn-primary">
+                View Collection
+            </a>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- 4. Why Choose Us -->
-    <section class="why-choose section-padding pt-0">
+    <section class="why-choose section-padding">
         <div class="container">
             <h2 class="section-title text-center">WHY CHOOSE UNIFORM VALLEY?</h2>
             <div class="features-grid">
@@ -145,7 +165,7 @@
                 <div class="collection-card">
                     <div class="collection-info">
                         <h3>MEDICAL SCRUBS</h3>
-                        <p>Comfortable, durable and<br>stylish scrubs for healthcare<br>professionals.</p>
+                        <p>Comfortable, durable scrubs<br>for healthcare professionals.</p>
                         <a href="scrubs.html" class="view-link">View Collection <i class="fa-solid fa-arrow-right"
                                 style="margin-left: 5px;"></i></a>
                     </div>
@@ -158,45 +178,60 @@
     </section>
 
     <!-- 6. Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+
+            <div class="footer-top">
+
                 <div class="footer-brand">
                     <h3>UNIFORM VALLEY</h3>
-                    <p style="margin-top: 15px;">A Modern Premium<br>Workwear Brand</p>
+                    <p>Premium Corporate & Medical Workwear</p>
                 </div>
-                <div class="footer-links-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="corporate.html">Corporate Collection</a></li>
-                        <li><a href="scrubs.html">Medical Scrubs</a></li>
-                        <li><a href="materials.html">Materials</a></li>
-                        <li><a href="customization.html">Customization</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-contact-inline">
+
+                    <a href="mailto:subhadevi@cratus.in">
+                        <i class="fa-regular fa-envelope"></i>
+                        subhadevi@cratus.in
+                    </a>
+
+                    <span class="contact-divider"></span>
+
+                    <a href="tel:+918884671299">
+                        <i class="fa-solid fa-phone"></i>
+                        +91 88846 71299
+                    </a>
+
                 </div>
-                <div class="footer-links-col">
-                    <h4>Collections</h4>
-                    <ul>
-                        <li><a href="corporate.html">Corporate Shirts</a></li>
-                        <li><a href="#">Executive Wear</a></li>
-                        <li><a href="scrubs.html">Medical Scrubs</a></li>
-                        <li><a href="#">Hospital Uniforms</a></li>
-                        <li><a href="#">Accessories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p style="margin-bottom: 15px;"><strong>Subha Devi</strong><br>Corporate Specialist</p>
-                    <p><i class="fa-regular fa-envelope"></i> subhadevi@cratus.in</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 88846 71299</p>
-                </div>
+
             </div>
+
+            <div class="footer-middle">
+
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="corporate.html">Corporate Collection</a>
+                    <a href="scrubs.html">Medical Scrubs</a>
+                    <a href="materials.html">Materials</a>
+                    <a href="customization.html">Customization</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+
+            </div>
+
             <div class="footer-bottom">
+
                 <p>&copy; 2024 Uniform Valley. All Rights Reserved.</p>
+
+                <p class="footer-specialist">
+                    <strong>Subha Devi</strong>
+                    <span>Corporate Specialist</span>
+                </p>
+
             </div>
+
         </div>
     </footer>
 
