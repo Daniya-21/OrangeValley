@@ -1,0 +1,244 @@
+/* ========================================
+   CORPORATE COLLECTION PAGE
+======================================== */
+
+
+/* ========================================
+   CORPORATE HERO
+======================================== */
+
+.corporate-hero {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1536 / 680;
+
+  background-image: url("../assets/images/corporate-cover.png");
+  background-size: cover;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.corporate-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+}
+
+.corporate-hero-content {
+    width: 40%;
+    max-width: 520px;
+    transform: translateX(-35px);
+}
+
+.corporate-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+
+  color: var(--primary-navy);
+
+  margin-bottom: 24px;
+}
+
+.corporate-hero-content h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+
+  color: var(--primary-navy);
+
+  margin-bottom: 28px;
+}
+
+.corporate-hero-content p {
+  max-width: 500px;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: var(--text-gray);
+}
+
+
+/* ========================================
+   SHIRT STYLES
+======================================== */
+
+.shirt-styles-section {
+    padding: 35px 0 45px;
+    background: #ffffff;
+}
+
+.corporate-section-title {
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 35px;
+}
+
+.shirt-styles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.shirt-card {
+    background: #f4f7fa;
+    border: 1px solid #dfe6ee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.shirt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(15, 35, 60, 0.12);
+}
+
+.shirt-card-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #eef2f5;
+}
+
+.shirt-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.shirt-card:nth-child(1) img {
+    object-position: center 40%;
+}
+
+.shirt-card:nth-child(2) img {
+    object-position: center 130%;
+}
+
+.shirt-card:nth-child(3) img {
+    object-position: center 45%;
+}
+
+.shirt-card:nth-child(4) img {
+    object-position: center 45%;
+}
+
+.shirt-card-content {
+    padding: 18px 20px 20px;
+    min-height: 115px;
+}
+
+.shirt-card-content span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    color: #6b7c91;
+    margin-bottom: 8px;
+}
+
+.shirt-card-content h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+    margin: 0 0 8px;
+}
+
+.shirt-card-content p {
+    font-size: 0.84rem;
+    line-height: 1.45;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.style-comparison {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px) {
+
+  .corporate-hero {
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .corporate-hero-content {
+    width: 48%;
+  }
+
+  .corporate-hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .shirt-styles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .corporate-hero {
+    min-height: 580px;
+
+    background-size: cover;
+    background-position: 65% center;
+  }
+
+  .corporate-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.84);
+  }
+
+  .corporate-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+  }
+
+  .corporate-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+   .shirt-styles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shirt-card-image {
+        height: 340px;
+    }
+}
