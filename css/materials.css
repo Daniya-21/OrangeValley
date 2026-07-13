@@ -1,0 +1,375 @@
+/* =========================================================
+   MATERIALS PAGE
+========================================================= */
+
+
+/* ================= MATERIALS HERO ================= */
+
+.materials-hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1536 / 650;
+
+    background-image: url("../assets/images/materials-cover.png");
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.materials-hero-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.materials-hero-content {
+    width: 40%;
+    max-width: 520px;
+}
+
+.materials-hero-label {
+    display: block;
+
+    margin-bottom: 28px;
+
+    color: #002b5c;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.materials-hero-content h1 {
+    margin: 0 0 28px;
+
+    color: #12243d;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+.materials-hero-content p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: #5f6f82;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ================= MATERIALS INTRO ================= */
+
+.materials-intro {
+    padding: 55px 0 35px;
+}
+
+.materials-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #607b99;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+.materials-intro h2 {
+    margin: 0 0 18px;
+
+    color: #12243d;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+.materials-intro p {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: #647184;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ================= FABRIC SECTION ================= */
+
+.fabric-section {
+    padding: 25px 0 75px;
+}
+
+.materials-section-title {
+    margin: 0 0 32px;
+
+    color: #071d3a;
+
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* ================= FABRIC GRID ================= */
+
+.fabric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    gap: 28px;
+}
+
+
+/* ================= FABRIC CARD ================= */
+
+.fabric-card {
+    background: #f4f7fa;
+    border: 1px solid #dce5ee;
+    border-radius: 9px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.fabric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 39, 71, 0.1);
+}
+
+
+/* ================= FABRIC IMAGE ================= */
+
+.fabric-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+/* ================= FABRIC CONTENT ================= */
+
+.fabric-content {
+    min-height: 135px;
+    padding: 18px 20px 20px;
+}
+
+.fabric-content span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #607b99;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.fabric-content h3 {
+    margin: 0 0 8px;
+
+    color: #071d3a;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fabric-content p {
+    margin: 0;
+
+    color: #667386;
+
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* ================= MATERIALS CTA ================= */
+
+.materials-cta {
+    padding: 38px 0;
+    background: #f3f6f9;
+    border-top: 1px solid #dce5ee;
+}
+
+.materials-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.materials-cta-content h2 {
+    margin: 0 0 12px;
+    color: #071d3a;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.materials-cta-content p {
+    margin: 0;
+    max-width: 700px;
+    color: #667386;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.materials-cta-btn {
+    flex-shrink: 0;
+    padding: 14px 30px;
+
+    background: #12243d;
+    color: #fff;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.materials-cta-btn:hover {
+    background: #071d3a;
+    transform: translateY(-2px);
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    .materials-hero {
+        min-height: 540px;
+        aspect-ratio: auto;
+
+        background-position: center;
+    }
+
+    .materials-hero-content {
+        width: 45%;
+    }
+
+    .materials-hero-content h1 {
+        font-size: 46px;
+    }
+
+    .fabric-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .materials-hero {
+        min-height: 600px;
+
+        align-items: flex-end;
+
+        background-position: 65% center;
+    }
+
+    .materials-hero::after {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.95) 0%,
+                rgba(255, 255, 255, 0.8) 55%,
+                rgba(255, 255, 255, 0.15) 100%
+            );
+    }
+
+    .materials-hero-container {
+        padding-bottom: 60px;
+    }
+
+    .materials-hero-content {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .materials-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .materials-intro {
+        padding: 55px 0 40px;
+    }
+
+    .materials-intro h2 {
+        font-size: 30px;
+    }
+
+    .fabric-section {
+        padding: 20px 0 60px;
+    }
+
+    .fabric-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .materials-cta-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .materials-cta-content h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .materials-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .materials-hero-content p {
+        font-size: 15px;
+    }
+
+    .materials-intro h2 {
+        font-size: 27px;
+    }
+
+    .materials-section-title {
+        font-size: 21px;
+        margin-bottom: 32px;
+    }
+
+    .fabric-card img {
+        height: 240px;
+    }
+
+}
