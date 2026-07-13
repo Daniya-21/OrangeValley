@@ -1,101 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Customization | Uniform Valley</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pages.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/customization.css">
 </head>
+
 <body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav class="navbar">
+
         <div class="container nav-container">
-            <a href="index.html" class="logo">UNIFORM VALLEY</a>
+
+            <a href="index.html" class="logo">
+                UNIFORM VALLEY
+            </a>
+
             <ul class="nav-links">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="about.html" >About Us</a></li>
-                <li><a href="corporate.html" >Corporate Collection</a></li>
-                <li><a href="scrubs.html" >Medical Scrubs</a></li>
-                <li><a href="materials.html" >Materials</a></li>
-                <li><a href="customization.html" class="active">Customization</a></li>
-                <li><a href="contact.html" >Contact Us</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="corporate.html">
+                        Corporate Collection
+                    </a>
+                </li>
+
+                <li>
+                    <a href="scrubs.html">
+                        Medical Scrubs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="materials.html">
+                        Materials
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="customization.html"
+                        class="active"
+                    >
+                        Customization
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
             </ul>
-            <a href="contact.html" class="btn btn-primary nav-btn">Get in Touch</a>
-            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+
+            <a
+                href="contact.html"
+                class="btn btn-primary nav-btn"
+            >
+                Get in Touch
+            </a>
+
+
+            <div class="hamburger">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
         </div>
+
     </nav>
 
-    <section class="page-hero" style="margin-bottom: 2rem;">
-        <div class="container">
-            <div class="page-hero-content" style="padding-bottom: 0;">
-                <h3 class="sub-section-title">CUSTOMIZATION</h3>
-                <h1>Your Brand. Speaks<br>for Itself</h1>
-                <p>A glimpse of our premium corporate shirts<br>and medical scrubs.</p>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="customization-hero">
+
+        <div class="container customization-hero-container">
+
+            <div class="customization-hero-content">
+
+                <span class="customization-hero-label">
+                    CUSTOMIZATION
+                </span>
+
+                <h1>
+                    Your Brand.<br>
+                    Woven Into<br>
+                    Every Detail.
+                </h1>
+
+                <p>
+                    Create professional uniforms tailored to your
+                    organisation through personalised branding,
+                    colours, sizing and design details.
+                </p>
+
             </div>
+
         </div>
+
     </section>
 
-    <section class="section-padding pt-0">
-        <div class="container">
-            <div class="toggles">
-                <button class="toggle-btn active">Corporate Shirts</button>
-                <button class="toggle-btn">Medical Scrubs</button>
-            </div>
-            
-            <div class="gallery">
-                <img src="assets/images/gallery-1.jpg" alt="Gallery">
-                <img src="assets/images/gallery-2.jpg" alt="Gallery">
-                <img src="assets/images/gallery-3.jpg" alt="Gallery">
-                <img src="assets/images/gallery-4.jpg" alt="Gallery">
-                <img src="assets/images/gallery-5.jpg" alt="Gallery">
-                <img src="assets/images/gallery-6.jpg" alt="Gallery">
-            </div>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="customization-intro">
+
+    <div class="container">
+
+        <span class="customization-label">
+            MADE FOR YOUR ORGANISATION
+        </span>
+
+        <h2>
+            Workwear That Represents Your Brand
+        </h2>
+
+        <p>
+            From corporate teams to healthcare professionals,
+            we customise every detail to create uniforms that
+            reflect your organisation's identity and everyday needs.
+        </p>
+
+        <div class="customization-filter">
+
+            <button class="filter-btn active" data-filter="all">
+                All Options
+            </button>
+
+            <button class="filter-btn" data-filter="corporate">
+                Corporate Workwear
+            </button>
+
+            <button class="filter-btn" data-filter="medical">
+                Medical Workwear
+            </button>
+
         </div>
+
+    </div>
+
+</section>
+    <!-- ================= CORPORATE CUSTOMIZATION ================= -->
+
+    <section class="customization-section filter-section" 
+    data-category="corporate">
+
+        <div class="container">
+
+            <div class="customization-heading">
+
+                <span>CORPORATE WORKWEAR</span>
+
+                <h2>
+                    Corporate Customization
+                </h2>
+
+                <p>
+                    Refined details designed to create a consistent
+                    and professional identity across your team.
+                </p>
+
+            </div>
+
+
+            <div class="customization-grid">
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <h3>Logo Embroidery</h3>
+
+                    <p>
+                        Add your company logo with clean and
+                        professional embroidery.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+
+                    <h3>Name Embroidery</h3>
+
+                    <p>
+                        Personalise uniforms with employee names
+                        or professional designations.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+
+                    <h3>Custom Colours</h3>
+
+                    <p>
+                        Select colours that complement your
+                        organisation's visual identity.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+
+                    <h3>Collar Options</h3>
+
+                    <p>
+                        Choose between classic and Mandarin
+                        collar styles for your team.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
     </section>
 
-    <footer class="footer">
+
+
+    <!-- ================= SCRUB CUSTOMIZATION ================= -->
+
+    <section class="customization-section scrub-customization filter-section"
+    data-category="medical">
+
         <div class="container">
-            <div class="footer-grid">
+
+            <div class="customization-heading">
+
+                <span>MEDICAL WORKWEAR</span>
+
+                <h2>
+                    Scrub Customization
+                </h2>
+
+                <p>
+                    Practical customization options designed for
+                    hospitals, clinics and healthcare teams.
+                </p>
+
+            </div>
+
+
+            <div class="customization-grid">
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <h3>Department Colours</h3>
+
+                    <p>
+                        Use distinct scrub colours to identify
+                        departments and healthcare teams.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+
+                    <h3>Hospital Branding</h3>
+
+                    <p>
+                        Integrate hospital or clinic branding
+                        directly into professional workwear.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </div>
+
+                    <h3>Staff Identification</h3>
+
+                    <p>
+                        Improve staff recognition through names,
+                        roles and department identification.
+                    </p>
+
+                </div>
+
+
+                <div class="customization-card">
+
+                    <div class="customization-icon">
+                        <i class="fa-solid fa-ruler"></i>
+                    </div>
+
+                    <h3>Custom Sizing</h3>
+
+                    <p>
+                        Flexible sizing options designed to support
+                        comfort across your entire team.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CUSTOMIZATION PROCESS ================= -->
+
+    <section class="customization-process">
+
+        <div class="container">
+
+            <h2 class="customization-process-title">
+                FROM IDEA TO UNIFORM
+            </h2>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-item">
+
+                    <span>01</span>
+
+                    <h3>Share Your Requirements</h3>
+
+                    <p>
+                        Tell us about your team's work environment
+                        and customization.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>02</span>
+
+                    <h3>Select Your Options</h3>
+
+                    <p>
+                        Choose your colours, branding, materials and
+                        design details.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>03</span>
+
+                    <h3>Review the Details</h3>
+
+                    <p>
+                        Finalise your uniform requirements before
+                        production.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>04</span>
+
+                    <h3>Deliver to Your Team</h3>
+
+                    <p>
+                        Professional workwear prepared and delivered to your location.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="customization-cta">
+
+        <div class="container customization-cta-container">
+
+            <div class="customization-cta-content">
+
+                <h2>
+                    Ready to Customize Your Team's Uniforms?
+                </h2>
+
+                <p>
+                    Share your requirements and let us help create
+                    professional workwear tailored to your organisation.
+                </p>
+
+            </div>
+
+
+            <a
+                href="contact.html"
+                class="customization-cta-btn"
+            >
+                Discuss Your Requirements
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+<footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
                 <div class="footer-brand">
                     <h3>UNIFORM VALLEY</h3>
-                    <p style="margin-top: 15px;">A Modern Premium<br>Workwear Brand</p>
+                    <p>Premium Corporate & Medical Workwear</p>
                 </div>
-                <div class="footer-links-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="corporate.html">Corporate Collection</a></li>
-                        <li><a href="scrubs.html">Medical Scrubs</a></li>
-                        <li><a href="materials.html">Materials</a></li>
-                        <li><a href="customization.html">Customization</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-contact-inline">
+
+                    <a href="mailto:subhadevi@cratus.in">
+                        <i class="fa-regular fa-envelope"></i>
+                        subhadevi@cratus.in
+                    </a>
+
+                    <span class="contact-divider"></span>
+
+                    <a href="tel:+918884671299">
+                        <i class="fa-solid fa-phone"></i>
+                        +91 88846 71299
+                    </a>
+
                 </div>
-                <div class="footer-links-col">
-                    <h4>Collections</h4>
-                    <ul>
-                        <li><a href="corporate.html">Corporate Shirts</a></li>
-                        <li><a href="#">Executive Wear</a></li>
-                        <li><a href="scrubs.html">Medical Scrubs</a></li>
-                        <li><a href="#">Hospital Uniforms</a></li>
-                        <li><a href="#">Accessories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p style="margin-bottom: 15px;"><strong>Subha Devi</strong><br>Corporate Specialist</p>
-                    <p><i class="fa-regular fa-envelope"></i> subhadevi@cratus.in</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 88846 71299</p>
-                </div>
+
             </div>
+
+            <div class="footer-middle">
+
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="corporate.html">Corporate Collection</a>
+                    <a href="scrubs.html">Medical Scrubs</a>
+                    <a href="materials.html">Materials</a>
+                    <a href="customization.html">Customization</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+
+            </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 Uniform Valley. All Rights Reserved.</p>
+
+                <p>&copy; 2026 Uniform Valley. All Rights Reserved.</p>
+
+                <p class="footer-specialist">
+                    <strong>Subha Devi</strong>
+                    <span>Corporate Specialist</span>
+                </p>
+
             </div>
+
         </div>
     </footer>
+
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
