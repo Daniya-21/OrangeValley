@@ -405,6 +405,83 @@
     animation: filterFade 0.4s ease;
 }
 
+.fabric-stats-section {
+    padding: 55px 0 45px;
+    background: #f3f6fa;
+}
+
+.fabric-stats-title {
+    margin: 0 0 45px;
+    text-align: center;
+    color: #001f4d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fabric-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fabric-stat {
+    padding: 10px 45px 20px;
+    text-align: center;
+    border-right: 1px solid #d2dce8;
+}
+
+.fabric-stat:last-child {
+    border-right: none;
+}
+
+.fabric-stat-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #cbd9e8;
+    border-radius: 50%;
+
+    color: #004587;
+    font-size: 23px;
+}
+
+.fabric-stat h3 {
+    margin: 0 0 14px;
+    color: #001f4d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.fabric-stat p {
+    margin: 0;
+    color: #62738a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.fabric-stats-note {
+    max-width: 760px;
+    margin: 28px auto 0;
+    padding-top: 20px;
+
+    text-align: center;
+    border-top: 1px solid #d2dce8;
+
+    color: #62738a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.fabric-stats-note i {
+    margin-right: 10px;
+    color: #004587;
+}
+
+
 /* ================= TABLET ================= */
 
 @media (max-width: 992px) {
