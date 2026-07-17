@@ -246,7 +246,7 @@
                     </h2>
 
 
-                    <form class="contact-form">
+                    <form id="contactForm" class="contact-form">
 
 
                         <div class="form-row">
@@ -340,8 +340,8 @@
 
                             <select
                                 id="requirement"
-                                name="requirement"
-                            >
+                                name="interest"
+                            >  
 
                                 <option value="">
                                     Select a requirement
@@ -535,6 +535,14 @@
     </footer>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+    emailjs.init({
+        publicKey: "peNUE33cjdfJrmfe",
+    });
+    </script>
 
     <script src="js/script.js"></script>
 

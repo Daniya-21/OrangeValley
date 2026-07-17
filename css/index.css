@@ -8,13 +8,8 @@
   height: 580px;
 
   background-image: url("../assets/images/hero-cover.png");
-
-  /* Zoom image to crop extra ceiling */
   background-size: 115% auto;
-
-  /* Keep shoes/bottom visible and crop the top */
   background-position: center bottom;
-
   background-repeat: no-repeat;
 
   display: flex;
@@ -41,7 +36,6 @@
 .hero-container {
   position: relative;
   z-index: 2;
-
   width: 100%;
 }
 
@@ -90,6 +84,7 @@
   border-radius: 4px;
 }
 
+
 /* =========================
    STATS BANNER
 ========================= */
@@ -102,7 +97,6 @@
   color: var(--white);
 
   padding: 2rem 0;
-  margin: 0;
 
   overflow: hidden;
 }
@@ -140,8 +134,9 @@
 
 .stat-text strong {
   font-size: 1.2rem;
-  color: var(--white);
   font-weight: 700;
+
+  color: var(--white);
 }
 
 .stat-divider {
@@ -151,29 +146,27 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+
 /* =========================
    MEDICAL SCRUBS SHOWCASE
 ========================= */
 
 .scrubs-showcase {
   position: relative;
+
   width: 100%;
   height: 600px;
   min-height: 600px;
 
   background-image: url("../assets/images/scrubs-cover.png");
   background-size: cover;
-
-  /* Protect heads and shoes */
   background-position: center center;
-
   background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
 
   overflow: hidden;
-  margin: 0;
 }
 
 .scrubs-overlay {
@@ -233,7 +226,6 @@
   color: var(--primary-navy);
 
   line-height: 1;
-
   letter-spacing: -1px;
 
   margin-bottom: 25px;
@@ -262,13 +254,16 @@
   margin-bottom: 30px;
 }
 
+
 /* =========================
    COLLECTIONS
 ========================= */
 
 .collections-grid {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 2rem;
 }
 
@@ -283,11 +278,15 @@
   align-items: stretch;
 
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .collection-card:hover {
   transform: translateY(-5px);
+
   box-shadow: 0 12px 30px rgba(21, 34, 56, 0.12);
 }
 
@@ -319,32 +318,32 @@
 }
 
 .view-link {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+
   font-size: 0.9rem;
   font-weight: 700;
 
   color: var(--primary-navy);
 
-  display: flex;
-  align-items: center;
-
-  width: fit-content;
-
-   transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .view-link:hover {
   text-decoration: underline;
+
   transform: translateX(6px);
 }
 
 .collection-img {
   width: 60%;
-
-  overflow: hidden;
+  height: 270px;
 
   display: flex;
 
-   height: 270px;
+  overflow: hidden;
 }
 
 .collection-img img {
@@ -360,21 +359,34 @@
   transform: scale(1.04);
 }
 
+
 /* =========================
    WHY CHOOSE US
 ========================= */
 
 .features-grid {
   display: grid;
+
   grid-template-columns: repeat(4, 1fr);
+
   text-align: center;
+
   gap: 2rem;
+
   margin-top: -10px;
+}
+
+.feature-item {
+  position: relative;
+
+  padding: 0 25px;
 }
 
 .feature-icon {
   font-size: 2.2rem;
+
   color: var(--primary-navy);
+
   margin-bottom: 1.25rem;
 }
 
@@ -389,33 +401,36 @@
 
 .feature-item p {
   font-size: 0.85rem;
-  color: var(--text-gray);
-}
 
-.feature-item {
-  position: relative;
-  padding: 0 25px;
+  color: var(--text-gray);
 }
 
 .feature-item:not(:last-child)::after {
   content: "";
+
   position: absolute;
+
   right: 0;
   top: 15%;
+
   width: 1px;
   height: 70%;
+
   background: #e5e9ef;
 }
 
+
 /* =========================
-   HOME RESPONSIVE - TABLET
+   TABLET
 ========================= */
 
 @media (max-width: 992px) {
+
   .hero {
     height: 520px;
-    min-height: 520px;
-    background-position: 45% center;
+
+    background-size: cover;
+    background-position: center bottom;
   }
 
   .hero-content {
@@ -430,79 +445,200 @@
     font-size: 1.15rem;
   }
 
+
+  /* STATS */
+
   .stats-container {
     flex-wrap: wrap;
-    gap: 2rem;
+
     justify-content: center;
+
+    gap: 2rem;
   }
 
   .stat-divider {
     display: none;
   }
 
-  .scrubs-showcase .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .scrubs-showcase .hero-content {
-    width: 100%;
-  }
+  /* COLLECTION */
 
-  .collections-grid,
-  .products-grid {
+  .collections-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+
 /* =========================
-   HOME RESPONSIVE - MOBILE
+   MOBILE
 ========================= */
 
 @media (max-width: 768px) {
+
+  /* ================= HERO ================= */
+
   .hero {
-    height: 580px;
-    min-height: 580px;
-    background-position: 58% center;
+    height: auto;
+    min-height: 0;
+
+    background-image: none;
+
+    display: block;
   }
 
-  .hero-overlay {
-    background: rgba(255, 255, 255, 0.82);
+  .hero-container {
+    width: 100%;
+    max-width: none;
+
+    padding: 0;
   }
 
   .hero-content {
     width: 100%;
-    padding: 50px 0;
+
+    padding: 42px 18px 30px;
+
+    background: #ffffff;
   }
 
   .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
+    font-size: 3rem;
+
+    line-height: 0.95;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 28px;
   }
 
   .hero-content h2 {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+
+    line-height: 1.35;
+
+    margin-bottom: 24px;
   }
 
   .hero-content p {
-    font-size: 1rem;
-    margin-bottom: 25px;
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 26px;
+  }
+
+  .hero-btn {
+    padding: 12px 24px;
+  }
+
+
+  /* MOBILE HERO IMAGE */
+
+  .hero-container::after {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 290px;
+
+    background-image: url("../assets/images/hero-cover.png");
+
+    background-size: cover;
+    background-position: 56% center;
+    background-repeat: no-repeat;
+  }
+
+
+  /* ================= STATS ================= */
+
+  .stats-banner {
+    padding: 32px 0;
   }
 
   .stats-container {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+
+    gap: 30px;
   }
 
   .stat-item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .collections-grid,
-  .products-grid,
-  .features-grid {
+  .stat-divider {
+    display: none;
+  }
+
+
+  /* ================= SCRUBS ================= */
+
+  .scrubs-showcase {
+    height: 580px;
+    min-height: 580px;
+
+    background-size: cover;
+    background-position: 38% center;
+  }
+
+  .scrubs-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.84) 0%,
+      rgba(255, 255, 255, 0.72) 52%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+  }
+
+  .scrubs-container {
+    padding: 0 24px;
+
+    justify-content: flex-start;
+  }
+
+  .scrubs-content {
+    width: 100%;
+    max-width: 300px;
+
+    margin: 0;
+
+    transform: none;
+  }
+
+  .scrubs-label {
+    margin-bottom: 14px;
+  }
+
+  .scrubs-content h2 {
+    font-size: 2.8rem;
+
+    line-height: 0.95;
+
+    margin-bottom: 28px;
+  }
+
+  .scrubs-content h3 {
+    font-size: 1.25rem;
+
+    line-height: 1.4;
+
+    margin-bottom: 24px;
+  }
+
+  .scrubs-content p {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+  }
+
+
+  /* ================= COLLECTIONS ================= */
+
+  .collections-grid {
     grid-template-columns: 1fr;
   }
 
@@ -517,23 +653,43 @@
 
   .collection-info {
     text-align: center;
+
     align-items: center;
   }
 
   .collection-img {
     height: 260px;
   }
+
+
+  /* ================= WHY CHOOSE ================= */
+
+  .features-grid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .feature-item {
+    padding: 28px 0;
+  }
+
+  .feature-item:not(:last-child)::after {
+    display: none;
+  }
 }
 
+
 /* =========================
-   HOME RESPONSIVE - SMALL MOBILE
+   SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-  .hero {
-    height: 540px;
-    min-height: 540px;
-    background-position: 60% center;
+
+  /* HERO */
+
+  .hero-content {
+    padding: 42px 18px 30px;
   }
 
   .hero-content h1 {
@@ -545,14 +701,61 @@
   }
 
   .hero-content p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
+
+  .hero-container::after {
+    height: 270px;
+    background-position: 75% center;
+  }
+
+
+  /* STATS */
 
   .stats-container {
     grid-template-columns: 1fr;
+
+    gap: 26px;
   }
 
   .stat-item {
     justify-content: flex-start;
+  }
+
+
+  /* SCRUBS */
+
+  .scrubs-showcase {
+    height: 580px;
+    min-height: 580px;
+
+    background-position: 5%center;
+  }
+
+  .scrubs-container {
+    padding: 0 24px;
+  }
+
+  .scrubs-content {
+    max-width: 285px;
+  }
+
+  .scrubs-content h2 {
+    font-size: 2.7rem;
+  }
+
+  .scrubs-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .scrubs-content p {
+    font-size: 0.95rem;
+  }
+
+
+  /* COLLECTION */
+
+  .collection-img {
+    height: 240px;
   }
 }

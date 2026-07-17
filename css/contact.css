@@ -11,7 +11,6 @@
 
 .contact-layout {
     display: grid;
-
     grid-template-columns: 0.9fr 1.1fr;
 
     gap: 75px;
@@ -24,6 +23,19 @@
 
 .contact-details {
     padding-top: 15px;
+}
+
+.contact-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #0b3b6f;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
 }
 
 .contact-details h2 {
@@ -102,6 +114,7 @@
 }
 
 .contact-method {
+    width: 100%;
     max-width: 450px;
 
     display: flex;
@@ -128,8 +141,7 @@
 
     border-color: #bdccdc;
 
-    box-shadow:
-        0 12px 28px rgba(15, 36, 62, 0.07);
+    box-shadow: 0 12px 28px rgba(15, 36, 62, 0.07);
 }
 
 .contact-method-icon {
@@ -162,6 +174,7 @@
     font-weight: 600;
 
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
@@ -170,6 +183,8 @@
 
     font-size: 14px;
     font-weight: 600;
+
+    overflow-wrap: anywhere;
 }
 
 
@@ -206,12 +221,14 @@
 .form-row {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 18px;
 }
 
 .form-group {
+    min-width: 0;
+
     display: flex;
     flex-direction: column;
 
@@ -253,8 +270,7 @@
 .form-group textarea:focus {
     border-color: #426b96;
 
-    box-shadow:
-        0 0 0 3px rgba(66, 107, 150, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 107, 150, 0.1);
 }
 
 .form-group input::placeholder,
@@ -315,84 +331,147 @@
     transform: translateX(4px);
 }
 
-/* ================= TABLET ================= */
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 992px) {
-
-    .contact-hero-content h1 {
-        font-size: 46px;
-    }
 
     .contact-layout {
         grid-template-columns: 1fr;
 
-        gap: 55px;
+        gap: 50px;
+    }
+
+    .contact-details {
+        padding-top: 0;
     }
 
     .contact-method {
         max-width: 100%;
     }
-
 }
 
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 768px) {
 
-    .contact-hero {
-        min-height: 400px;
-    }
-
-    .contact-hero-content h1 {
-        font-size: 38px;
-    }
-
-    .contact-hero-content p {
-        font-size: 15px;
-    }
-
     .contact-section {
-        padding: 55px 0;
+        padding: 42px 0 50px;
+    }
+
+    .contact-layout {
+        gap: 45px;
+    }
+
+
+    /* CONTACT DETAILS */
+
+    .contact-label {
+        margin-bottom: 12px;
+
+        font-size: 0.7rem;
     }
 
     .contact-details h2 {
-        font-size: 29px;
+        font-size: 2rem;
+
+        line-height: 1.2;
+
+        margin-bottom: 18px;
     }
+
+    .contact-description {
+        margin-bottom: 30px;
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* SPECIALIST */
+
+    .specialist-card {
+        margin-bottom: 28px;
+    }
+
+
+    /* CONTACT METHODS */
+
+    .contact-method {
+        padding: 16px;
+
+        gap: 14px;
+    }
+
+
+    /* FORM */
 
     .contact-form-card {
         padding: 30px 24px;
     }
 
+    .contact-form-card h2 {
+        font-size: 1.7rem;
+
+        line-height: 1.2;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
+
+        gap: 15px;
     }
 
-    .contact-note-container {
-        align-items: flex-start;
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
     }
-
 }
 
 
-/* ================= SMALL MOBILE ================= */
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
 @media (max-width: 480px) {
 
-    .contact-hero {
-        min-height: 380px;
+    .contact-section {
+        padding: 38px 0 45px;
     }
 
-    .contact-hero-content h1 {
-        font-size: 33px;
+    .contact-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-method {
+        padding: 14px;
+    }
+
+    .contact-method-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-method strong {
+        font-size: 13px;
     }
 
     .contact-form-card {
-        padding: 26px 20px;
+        padding: 26px 18px;
     }
 
     .contact-form-card h2 {
-        font-size: 25px;
+        font-size: 1.55rem;
     }
 
+    .contact-submit {
+        padding: 14px 18px;
+    }
 }

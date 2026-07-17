@@ -34,14 +34,12 @@
 
 .materials-hero-label {
     display: block;
-
     margin-bottom: 28px;
 
     color: #002b5c;
 
     font-size: 13px;
     font-weight: 700;
-
     letter-spacing: 2px;
 }
 
@@ -53,13 +51,11 @@
     font-size: 56px;
     font-weight: 700;
     line-height: 1.08;
-
     letter-spacing: -1.5px;
 }
 
 .materials-hero-content p {
     max-width: 500px;
-
     margin: 0;
 
     color: #5f6f82;
@@ -77,14 +73,12 @@
 
 .materials-label {
     display: block;
-
     margin-bottom: 10px;
 
     color: #607b99;
 
     font-size: 12px;
     font-weight: 700;
-
     letter-spacing: 1.8px;
 }
 
@@ -95,13 +89,11 @@
 
     font-size: 34px;
     font-weight: 700;
-
     line-height: 1.25;
 }
 
 .materials-intro p {
     max-width: 900px;
-
     margin: 0;
 
     color: #647184;
@@ -143,8 +135,10 @@
 
 .fabric-card {
     background: #f4f7fa;
+
     border: 1px solid #dce5ee;
     border-radius: 9px;
+
     overflow: hidden;
 
     transition:
@@ -154,28 +148,26 @@
 
 .fabric-card:hover {
     transform: translateY(-5px);
+
     box-shadow: 0 14px 30px rgba(15, 39, 71, 0.1);
 }
-
-
-/* ================= FABRIC IMAGE ================= */
 
 .fabric-card img {
     width: 100%;
     height: 175px;
+
     object-fit: cover;
 }
 
-
-/* ================= FABRIC CONTENT ================= */
-
 .fabric-content {
     min-height: 135px;
+
     padding: 18px 20px 20px;
 }
 
 .fabric-content span {
     display: block;
+
     margin-bottom: 8px;
 
     color: #607b99;
@@ -203,145 +195,37 @@
     line-height: 1.55;
 }
 
-.fabric-collection-section {
-    padding: 70px 0 80px;
-    background: #ffffff;
-}
 
-.fabric-label {
-    margin: 0 0 14px;
-    color: #8b7355;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.fabric-title {
-    margin: 0 0 26px;
-    color: #172b49;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
-    line-height: 1.2;
-}
-
-.fabric-description {
-    max-width: 900px;
-    margin: 0 0 48px;
-    color: #5f6f85;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.fabric-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 55px;
-    row-gap: 40px;
-}
-
-.fabric-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.fabric-item img {
-    width: 90px;
-    height: 90px;
-    flex-shrink: 0;
-    object-fit: cover;
-    border-radius: 3px;
-}
-
-.fabric-item h4 {
-    margin: 3px 0 8px;
-    color: #001f4d;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.fabric-item p {
-    margin: 0;
-    color: #333333;
-    font-size: 14px;
-    line-height: 1.45;
-}
-
-/* ================= MATERIALS CTA ================= */
-
-.materials-cta {
-    padding: 38px 0;
-    background: #f3f6f9;
-    border-top: 1px solid #dce5ee;
-}
-
-.materials-cta-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.materials-cta-content h2 {
-    margin: 0 0 12px;
-    color: #071d3a;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.materials-cta-content p {
-    margin: 0;
-    max-width: 700px;
-    color: #667386;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.materials-cta-btn {
-    flex-shrink: 0;
-    padding: 14px 30px;
-
-    background: #12243d;
-    color: #fff;
-
-    border-radius: 4px;
-
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.materials-cta-btn:hover {
-    background: #071d3a;
-    transform: translateY(-2px);
-}
-
-/* =========================================
-   FABRIC STATS
-========================================= */
+/* ================= FABRIC STATS ================= */
 
 .fabric-stats-section {
     padding: 55px 0 45px;
+
     background: #f3f6fa;
 }
 
 .fabric-stats-title {
     margin: 0 0 45px;
+
     text-align: center;
+
     color: #001f4d;
+
     font-size: 24px;
     font-weight: 700;
 }
 
 .fabric-stats-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
 }
 
 .fabric-stat {
     padding: 10px 45px 20px;
+
     text-align: center;
+
     border-right: 1px solid #d2dce8;
 }
 
@@ -352,6 +236,7 @@
 .fabric-stat-icon {
     width: 64px;
     height: 64px;
+
     margin: 0 auto 24px;
 
     display: flex;
@@ -362,86 +247,214 @@
     border-radius: 50%;
 
     color: #004587;
+
     font-size: 23px;
 }
 
 .fabric-stat h3 {
     margin: 0 0 14px;
+
     color: #001f4d;
+
     font-size: 17px;
     font-weight: 700;
 }
 
 .fabric-stat p {
     margin: 0;
+
     color: #62738a;
+
     font-size: 14px;
     line-height: 1.6;
 }
 
 .fabric-stats-note {
     max-width: 760px;
+
     margin: 28px auto 0;
     padding-top: 20px;
 
     text-align: center;
+
     border-top: 1px solid #d2dce8;
 
     color: #62738a;
+
     font-size: 14px;
     line-height: 1.6;
 }
 
 .fabric-stats-note i {
     margin-right: 10px;
+
     color: #004587;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* ================= PREMIUM MATERIALS ================= */
 
-@media (max-width: 900px) {
+.fabric-collection-section {
+    padding: 70px 0 80px;
 
-    .fabric-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px 0;
-    }
-
-    .fabric-stat:nth-child(2) {
-        border-right: none;
-    }
+    background: #ffffff;
 }
 
-@media (max-width: 600px) {
+.fabric-label {
+    margin: 0 0 14px;
 
-    .fabric-stats-grid {
-        grid-template-columns: 1fr;
-    }
+    color: #8b7355;
 
-    .fabric-stat {
-        border-right: none;
-        border-bottom: 1px solid #d2dce8;
-        padding: 25px;
-    }
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 
-    .fabric-stat:last-child {
-        border-bottom: none;
-    }
-
-    .fabric-stats-title {
-        font-size: 21px;
-    }
+    text-transform: uppercase;
 }
 
-/* ================= TABLET ================= */
+.fabric-title {
+    margin: 0 0 26px;
+
+    color: #172b49;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.fabric-description {
+    max-width: 900px;
+
+    margin: 0 0 48px;
+
+    color: #5f6f85;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.fabric-list {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 55px;
+    row-gap: 40px;
+}
+
+.fabric-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+}
+
+.fabric-item img {
+    width: 90px;
+    height: 90px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+.fabric-item h4 {
+    margin: 3px 0 8px;
+
+    color: #001f4d;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fabric-item p {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+
+/* ================= MATERIALS CTA ================= */
+
+.materials-cta {
+    padding: 38px 0;
+
+    background: #f3f6f9;
+
+    border-top: 1px solid #dce5ee;
+}
+
+.materials-cta-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.materials-cta-content h2 {
+    margin: 0 0 12px;
+
+    color: #071d3a;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.materials-cta-content p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #667386;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.materials-cta-btn {
+    flex-shrink: 0;
+
+    padding: 14px 30px;
+
+    background: #12243d;
+    color: #ffffff;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.materials-cta-btn:hover {
+    background: #071d3a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 1024px) {
 
     .materials-hero {
-        min-height: 540px;
-        aspect-ratio: auto;
+        height: 540px;
 
         background-position: center;
     }
@@ -462,119 +475,286 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .fabric-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px 0;
+    }
+
+    .fabric-stat:nth-child(2) {
+        border-right: none;
+    }
 }
 
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 768px) {
 
+    /* ================= HERO ================= */
+
     .materials-hero {
-        min-height: 600px;
+        height: auto;
+        min-height: 0;
 
-        align-items: flex-end;
+        background-image: none;
 
-        background-position: 65% center;
-    }
+        display: block;
 
-    .materials-hero::after {
-        content: "";
-
-        position: absolute;
-        inset: 0;
-
-        background:
-            linear-gradient(
-                90deg,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(255, 255, 255, 0.8) 55%,
-                rgba(255, 255, 255, 0.15) 100%
-            );
+        overflow: visible;
     }
 
     .materials-hero-container {
-        padding-bottom: 60px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
     }
 
     .materials-hero-content {
         width: 100%;
-        max-width: 500px;
+        max-width: none;
+
+        padding: 45px 20px 40px;
+
+        background: #ffffff;
+    }
+
+    .materials-hero-label {
+        margin-bottom: 14px;
+
+        font-size: 0.72rem;
+        letter-spacing: 1.5px;
     }
 
     .materials-hero-content h1 {
-        font-size: 40px;
+        margin-bottom: 22px;
+
+        font-size: 2.2rem;
+
+        line-height: 1.15;
+        letter-spacing: -0.5px;
     }
 
+    .materials-hero-content p {
+        max-width: none;
+
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+
+    /* ================= MOBILE HERO IMAGE ================= */
+
+    .materials-hero-container::after {
+        content: "";
+
+        display: block;
+
+        width: 100%;
+        height: 400px;
+
+        background-image: url("../assets/images/materials-cover.png");
+
+        background-size: auto 400px;
+
+        background-position: 68% center;
+
+        background-repeat: no-repeat;
+
+        background-color: #f2f0eb;
+    }
+
+
+    /* ================= FABRIC STATS ================= */
+
+    .fabric-stats-section {
+        padding: 45px 0;
+    }
+
+    .fabric-stats-title {
+        margin-bottom: 35px;
+
+        font-size: 1.3rem;
+    }
+
+    .fabric-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0;
+    }
+
+    .fabric-stat {
+        padding: 30px 18px;
+
+        border-right: 1px solid #d2dce8;
+        border-bottom: 1px solid #d2dce8;
+    }
+
+    .fabric-stat:nth-child(2),
+    .fabric-stat:nth-child(4) {
+        border-right: none;
+    }
+
+    .fabric-stat:nth-child(3),
+    .fabric-stat:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .fabric-stats-note {
+        margin: 25px 20px 0;
+
+        padding-top: 20px;
+    }
+
+
+    /* ================= INTRO ================= */
+
     .materials-intro {
-        padding: 55px 0 40px;
+        padding: 45px 0 35px;
     }
 
     .materials-intro h2 {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
+
+    /* ================= FABRIC CARDS ================= */
+
     .fabric-section {
-        padding: 20px 0 60px;
+        padding: 20px 0 55px;
     }
 
     .fabric-grid {
         grid-template-columns: 1fr;
+
+        gap: 25px;
     }
 
-    .materials-cta-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
+    .fabric-card img {
+        height: 260px;
     }
 
-    .materials-cta-content h2 {
-        font-size: 23px;
-    }
+
+    /* ================= PREMIUM MATERIALS ================= */
 
     .fabric-collection-section {
         padding: 50px 0;
     }
 
     .fabric-title {
-        font-size: 29px;
+        font-size: 1.8rem;
+    }
+
+    .fabric-description {
+        margin-bottom: 35px;
+
+        font-size: 0.95rem;
     }
 
     .fabric-list {
         grid-template-columns: 1fr;
-        row-gap: 28px;
+
+        row-gap: 30px;
     }
 
     .fabric-item img {
-        width: 82px;
-        height: 82px;
+        width: 85px;
+        height: 85px;
     }
 
+
+    /* ================= CTA ================= */
+
+    .materials-cta-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 24px;
+    }
 }
 
 
-/* ================= SMALL MOBILE ================= */
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
 @media (max-width: 480px) {
 
+    .materials-hero-content {
+        padding: 38px 18px 35px;
+    }
+
     .materials-hero-content h1 {
-        font-size: 34px;
+        font-size: 2rem;
     }
 
     .materials-hero-content p {
+        font-size: 0.92rem;
+    }
+
+
+    /* HERO IMAGE */
+
+    .materials-hero-container::after {
+        height: 330px;
+
+        background-size: auto 330px;
+
+        background-position: 90% center;
+    }
+
+
+    /* STATS */
+
+    .fabric-stats-title {
+        font-size: 1.2rem;
+    }
+
+    .fabric-stat {
+        padding: 25px 12px;
+    }
+
+    .fabric-stat-icon {
+        width: 58px;
+        height: 58px;
+
+        margin-bottom: 18px;
+
+        font-size: 21px;
+    }
+
+    .fabric-stat h3 {
         font-size: 15px;
     }
 
-    .materials-intro h2 {
-        font-size: 27px;
+    .fabric-stat p {
+        font-size: 13px;
     }
 
-    .materials-section-title {
-        font-size: 21px;
-        margin-bottom: 32px;
+
+    /* MATERIALS */
+
+    .materials-intro h2,
+    .fabric-title {
+        font-size: 1.65rem;
     }
 
     .fabric-card img {
         height: 240px;
     }
 
+    .fabric-item {
+        gap: 14px;
+    }
+
+    .fabric-item img {
+        width: 80px;
+        height: 80px;
+    }
 }

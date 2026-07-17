@@ -33,6 +33,7 @@
 .scrubs-hero-content {
     width: 40%;
     max-width: 500px;
+
     transform: translateX(-20px);
 }
 
@@ -109,12 +110,14 @@
     border: 1px solid #dbe3ec;
     border-radius: 10px;
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .scrub-card:hover {
     transform: translateY(-6px);
+
     box-shadow: 0 18px 40px rgba(15, 39, 71, 0.12);
 }
 
@@ -186,18 +189,22 @@
 
 .scrub-features-section {
     background: #f4f7fa;
+
     padding: 46px 0 50px;
 }
 
 .scrub-features {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     align-items: stretch;
 }
 
 .scrub-feature {
-    padding: 10px 42px 6px;
     position: relative;
+
+    padding: 10px 42px 6px;
 
     text-align: center;
 
@@ -253,7 +260,9 @@
 }
 
 
-/* ================= RESPONSIVE ================= */
+/* =====================================================
+   TABLET
+===================================================== */
 
 @media (max-width: 1000px) {
 
@@ -289,53 +298,185 @@
 }
 
 
+/* =====================================================
+   MOBILE
+===================================================== */
+
 @media (max-width: 768px) {
 
-    .scrubs-hero {
-        height: 520px;
+    /* ================= HERO ================= */
 
-        background-position: 62% center;
+    .scrubs-hero {
+        height: auto;
+        min-height: 0;
+
+        background-image: none;
+
+        display: block;
+
+        overflow: visible;
+    }
+
+    .scrubs-hero-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
     }
 
     .scrubs-hero-content {
-        width: 65%;
+        width: 100%;
+        max-width: none;
+
+        transform: none;
+
+        padding: 45px 20px 40px;
+
+        background: #ffffff;
+    }
+
+    .scrubs-label {
+        margin-bottom: 14px;
+
+        font-size: 0.72rem;
+
+        letter-spacing: 1.5px;
     }
 
     .scrubs-hero-content h1 {
-        font-size: 40px;
+        margin-bottom: 22px;
+
+        font-size: 2.2rem;
+
+        line-height: 1.15;
+
+        letter-spacing: -0.5px;
+    }
+
+    .scrubs-hero-content p {
+        max-width: none;
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* ================= MOBILE HERO IMAGE ================= */
+
+    .scrubs-hero-container::after {
+        content: "";
+
+        display: block;
+
+        width: 100%;
+        height: 400px;
+
+        background-image: url("../assets/images/scrubs-hero.png");
+
+        background-size: auto 400px;
+
+        background-position: 70% center;
+
+        background-repeat: no-repeat;
+
+        background-color: #eef3f5;
+    }
+
+
+    /* ================= CATEGORIES ================= */
+
+    .scrub-categories {
+        padding: 45px 0 50px;
+    }
+
+    .scrubs-section-title {
+        margin-bottom: 30px;
+
+        font-size: 1.2rem;
     }
 
     .scrub-category-grid {
         grid-template-columns: 1fr;
+
+        gap: 25px;
     }
 
     .scrub-card-image {
         height: 380px;
     }
+
+
+    /* ================= FEATURES ================= */
+
+    .scrub-features {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 0;
+    }
+
+    .scrub-feature {
+        padding: 30px 20px;
+    }
+
+    .scrub-feature:nth-child(2) {
+        border-right: none;
+    }
+
+    .scrub-feature:nth-child(1),
+    .scrub-feature:nth-child(2) {
+        border-bottom: 1px solid #d8e0e9;
+    }
 }
 
 
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
 @media (max-width: 520px) {
 
-    .scrubs-hero {
-        height: 500px;
-    }
-
     .scrubs-hero-content {
-        width: 88%;
+        padding: 38px 18px 35px;
     }
 
     .scrubs-hero-content h1 {
-        font-size: 35px;
+        font-size: 2rem;
+
+        line-height: 1.15;
     }
 
     .scrubs-hero-content p {
-        font-size: 14px;
+        font-size: 0.92rem;
+
+        line-height: 1.7;
     }
 
-    .scrub-categories,
+
+    /* MOBILE IMAGE */
+
+    .scrubs-hero-container::after {
+        height: 330px;
+
+        background-size: auto 330px;
+
+        background-position: 90% center;
+    }
+
+
+    /* CARDS */
+
+    .scrub-card-image {
+        height: 320px;
+    }
+
+
+    /* FEATURES */
+
     .scrub-features-section {
-        padding: 50px 0;
+        padding: 45px 0;
     }
 
     .scrub-features {
@@ -343,17 +484,14 @@
     }
 
     .scrub-feature {
-        padding: 28px 20px;
+        padding: 30px 20px;
 
         border-right: none;
+
         border-bottom: 1px solid #d8e0e9;
     }
 
     .scrub-feature:last-child {
         border-bottom: none;
-    }
-
-    .scrub-card-image {
-        height: 320px;
     }
 }
