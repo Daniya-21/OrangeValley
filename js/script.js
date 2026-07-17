@@ -145,7 +145,6 @@ if (contactForm) {
             "template_3vk8n84",
             this
         )
-
         .then(() => {
 
             alert("✅ Thank you! Your enquiry has been sent successfully.");
@@ -153,15 +152,19 @@ if (contactForm) {
             contactForm.reset();
 
         })
-
         .catch((error) => {
 
-            console.error(error);
+            console.log("EMAILJS ERROR");
+            console.log(error);
 
-            alert("❌ Failed to send message. Please try again.");
+            alert(
+                "Status: " +
+                error.status +
+                "\n\n" +
+                error.text
+            );
 
         })
-
         .finally(() => {
 
             submitButton.disabled = false;
